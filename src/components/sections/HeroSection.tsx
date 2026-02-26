@@ -8,9 +8,9 @@ import { MagneticButton } from '../ui'
 
 // Curated BJJ/MMA photos from Pexels & Unsplash (free commercial use)
 const HERO_IMAGES = [
-  'https://images.pexels.com/photos/6253305/pexels-photo-6253305.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/6253300/pexels-photo-6253300.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
-  'https://images.pexels.com/photos/5067745/pexels-photo-5067745.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+  '/images/pexels-6253305.jpeg',
+  '/images/pexels-6253300.jpeg',
+  '/images/pexels-5067745.jpeg',
 ]
 
 export function HeroSection() {

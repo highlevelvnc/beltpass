@@ -8,37 +8,37 @@ import { Reveal, SectionLabel } from '../ui'
 // Real BJJ/MMA photos from Pexels (free for commercial use)
 const GALLERY = [
   {
-    src: 'https://images.pexels.com/photos/6253305/pexels-photo-6253305.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
+    src: '/images/pexels-6253305.jpeg',
     label: 'BJJ Training',
     alt: 'Brazilian jiu-jitsu sparring session',
     span: 'tall',
   },
   {
-    src: 'https://images.pexels.com/photos/6253300/pexels-photo-6253300.jpeg?auto=compress&cs=tinysrgb&w=700&h=400&fit=crop',
+    src: '/images/pexels-6253300.jpeg',
     label: 'Guard Passing',
     alt: 'BJJ ground technique training',
     span: 'wide',
   },
   {
-    src: 'https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop',
+    src: '/images/pexels-4761663.jpeg',
     label: 'Belt System',
     alt: 'BJJ belt graduation ceremony',
     span: 'square',
   },
   {
-    src: 'https://images.pexels.com/photos/6253319/pexels-photo-6253319.jpeg?auto=compress&cs=tinysrgb&w=700&h=400&fit=crop',
+    src: '/images/pexels-6253319.jpeg',
     label: 'Gi Training',
     alt: 'BJJ kimono training',
     span: 'wide',
   },
   {
-    src: 'https://images.pexels.com/photos/5067748/pexels-photo-5067748.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop',
+    src: '/images/pexels-5067748.jpeg',
     label: 'Master Instruction',
     alt: 'BJJ master teaching class',
     span: 'tall',
   },
   {
-    src: 'https://images.pexels.com/photos/6253302/pexels-photo-6253302.jpeg?auto=compress&cs=tinysrgb&w=700&h=450&fit=crop',
+    src: '/images/pexels-6253302.jpeg',
     label: 'Competition Ready',
     alt: 'BJJ competition preparation',
     span: 'wide',

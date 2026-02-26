@@ -6,9 +6,9 @@ import { Reveal, SectionLabel } from '../ui'
 
 // Pexels BJJ/MMA photos (free, commercial use, no attribution required)
 const PROBLEM_IMGS = [
-  'https://images.pexels.com/photos/6253308/pexels-photo-6253308.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  'https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  'https://images.pexels.com/photos/6253316/pexels-photo-6253316.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
+  '/images/pexels-6253308.jpeg',
+  '/images/pexels-4761663.jpeg',
+  '/images/pexels-6253316.jpeg',
 ]
 
 export function ProblemSection() {

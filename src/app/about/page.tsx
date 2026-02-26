@@ -16,7 +16,7 @@ export default function AboutPage() {
       {/* Hero with BJJ image */}
       <div style={{ position:'relative', height:'420px', overflow:'hidden' }}>
         <Image
-          src="https://images.pexels.com/photos/6253305/pexels-photo-6253305.jpeg?auto=compress&cs=tinysrgb&w=1400&h=600&fit=crop"
+          src="/images/pexels-6253305.jpeg"
           alt="BJJ training"
           fill unoptimized
           style={{ objectFit:'cover', filter:'brightness(0.35) saturate(0.7)' }}
@@ -63,8 +63,8 @@ export default function AboutPage() {
           {/* Photo row */}
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'16px', margin:'24px 0' }}>
             {[
-              'https://images.pexels.com/photos/6253302/pexels-photo-6253302.jpeg?auto=compress&cs=tinysrgb&w=600&h=380&fit=crop',
-              'https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=600&h=380&fit=crop',
+              '/images/pexels-6253302.jpeg',
+              '/images/pexels-4761663.jpeg',
             ].map((src, i) => (
               <div key={i} style={{ position:'relative', height:'200px', borderRadius:'14px', overflow:'hidden', border:'1px solid var(--bp-border)' }}>
                 <Image src={src} alt="BJJ training" fill unoptimized style={{ objectFit:'cover', filter:'brightness(0.7) saturate(0.85)' }} sizes="300px" />

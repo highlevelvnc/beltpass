@@ -52,7 +52,7 @@ export function StatsBar() {
       <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.pexels.com/photos/6253298/pexels-photo-6253298.jpeg?auto=compress&cs=tinysrgb&w=1400&h=300&fit=crop"
+          src="/images/pexels-6253298.jpeg"
           alt=""
           style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.12) saturate(0.5)', display: 'block' }}
         />

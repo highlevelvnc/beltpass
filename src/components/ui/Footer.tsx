@@ -26,9 +26,9 @@ const footerLinks = {
 
 // Small footer belt/gi images for visual flair
 const FOOTER_IMGS = [
-  'https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=300&h=100&fit=crop',
-  'https://images.pexels.com/photos/6253308/pexels-photo-6253308.jpeg?auto=compress&cs=tinysrgb&w=300&h=100&fit=crop',
-  'https://images.pexels.com/photos/6253316/pexels-photo-6253316.jpeg?auto=compress&cs=tinysrgb&w=300&h=100&fit=crop',
+  '/images/pexels-4761663.jpeg',
+  '/images/pexels-6253308.jpeg',
+  '/images/pexels-6253316.jpeg',
 ]
 
 export function Footer() {
@@ -62,7 +62,7 @@ export function Footer() {
               {/* Mini BJJ image logo accent */}
               <div style={{ position: 'relative', width: '32px', height: '32px', borderRadius: '8px', overflow: 'hidden', border: '1px solid var(--bp-border)', flexShrink: 0 }}>
                 <Image
-                  src="https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop"
+                  src="/images/pexels-4761663.jpeg"
                   alt="BeltPass" fill unoptimized
                   style={{ objectFit: 'cover', filter: 'saturate(0.7) brightness(0.65)' }}
                   sizes="32px"

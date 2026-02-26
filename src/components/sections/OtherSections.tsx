@@ -10,13 +10,13 @@ import { Reveal, SectionLabel, Card, MagneticButton } from '../ui'
 
 // Master/instructor portraits from Pexels (free commercial use)
 const COUNCIL_PHOTOS = [
-  'https://images.pexels.com/photos/4761660/pexels-photo-4761660.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop&crop=faces',
-  'https://images.pexels.com/photos/5067748/pexels-photo-5067748.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop&crop=faces',
-  'https://images.pexels.com/photos/4761671/pexels-photo-4761671.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop&crop=faces',
+  '/images/pexels-4761660.jpeg',
+  '/images/pexels-5067748.jpeg',
+  '/images/pexels-4761671.jpeg',
 ]
 
 // Founding section background from Pexels
-const FOUNDING_BG = 'https://images.pexels.com/photos/5067745/pexels-photo-5067745.jpeg?auto=compress&cs=tinysrgb&w=1400&h=700&fit=crop'
+const FOUNDING_BG = '/images/pexels-5067745.jpeg'
 
 /* ─────────────── COUNCIL ─────────────── */
 const councilData = [
@@ -455,7 +455,7 @@ export function SignupSection() {
           <Reveal delay={0.35}>
             <div style={{ position:'relative', height:'180px', borderRadius:'16px', overflow:'hidden', border:'1px solid var(--bp-border)', marginTop:'32px' }}>
               <Image
-                src="https://images.pexels.com/photos/6253314/pexels-photo-6253314.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop"
+                src="/images/pexels-6253314.jpeg"
                 alt="BJJ Academy training" fill unoptimized
                 style={{ objectFit:'cover', filter:'brightness(0.65) saturate(0.8)', transition:'transform 0.6s ease' }}
                 sizes="400px"

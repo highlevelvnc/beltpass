@@ -7,9 +7,9 @@ import { Reveal, SectionLabel } from '../ui'
 
 // Step photos from Pexels (BJJ/martial arts - free commercial use)
 const STEP_IMGS = [
-  'https://images.pexels.com/photos/4761660/pexels-photo-4761660.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-  'https://images.pexels.com/photos/6253302/pexels-photo-6253302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-  'https://images.pexels.com/photos/6253314/pexels-photo-6253314.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+  '/images/pexels-4761660.jpeg',
+  '/images/pexels-6253302.jpeg',
+  '/images/pexels-6253314.jpeg',
 ]
 
 export function HowSection() {
@@ -81,7 +81,7 @@ export function HowSection() {
             {/* Academy photo */}
             <div style={{ position:'relative', height:'160px', borderRadius:'12px', overflow:'hidden', marginBottom:'20px', border:'1px solid var(--bp-border)' }}>
               <Image
-                src="https://images.pexels.com/photos/5067745/pexels-photo-5067745.jpeg?auto=compress&cs=tinysrgb&w=700&h=350&fit=crop"
+                src="/images/pexels-5067745.jpeg"
                 alt="BJJ Academy training"
                 fill unoptimized
                 style={{ objectFit:'cover', filter:'brightness(0.6) saturate(0.8)' }}

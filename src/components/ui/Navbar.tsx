@@ -10,7 +10,7 @@ import { useI18n } from '@/i18n/context'
 import type { Lang } from '@/i18n/translations'
 
 // Small belt image shown in nav logo when scrolled
-const BELT_IMG = 'https://images.pexels.com/photos/4761663/pexels-photo-4761663.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop'
+const BELT_IMG = '/images/pexels-4761663.jpeg'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
