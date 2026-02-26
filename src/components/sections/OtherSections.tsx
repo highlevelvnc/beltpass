@@ -81,7 +81,10 @@ export function CouncilSection() {
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:'24px' }} className="council-grid">
         {councilData.map((person, i) => (
           <Reveal key={i} delay={i * 0.12}>
-            <Card glow style={{ padding:'32px', height:'100%', display:'flex', flexDirection:'column', gap:'20px' }}>
+           <Card
+  glow
+  className="p-8 h-full flex flex-col gap-5"
+>
               {/* Real photo avatar */}
               <div style={{ position:'relative', width:'72px', height:'72px', borderRadius:'16px', overflow:'hidden', border:'2px solid var(--bp-border)', flexShrink:0 }}>
                 <Image
@@ -188,7 +191,7 @@ export function FoundingSection() {
                   </li>
                 ))}
               </ul>
-              <MagneticButton style={{ width: '100%' }}>
+              <MagneticButton className="w-full">
                 <a href="#signup" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', background: 'var(--bp-accent)', color: 'var(--bp-black)', padding: '14px', borderRadius: '10px', fontWeight: 700, fontSize: '0.9rem', textDecoration: 'none', transition: 'all 0.2s' }}
                   onMouseEnter={e => { e.currentTarget.style.background = '#22e8a0'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(42,245,176,0.3)' }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'var(--bp-accent)'; e.currentTarget.style.boxShadow = '' }}

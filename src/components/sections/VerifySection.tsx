@@ -39,22 +39,35 @@ export function VerifySection() {
     }
   }
 
-  // Generate QR once verified
-  useEffect(() => {
-    if (state !== 'verified' || !qrUrl || !qrRef.current) return
-    qrRef.current.innerHTML = ''
-    import('qrcode').then(QRCode => {
-      QRCode.toCanvas(document.createElement('canvas'), qrUrl, { width: 80, color: { dark: '#000', light: '#fff' } }, (err, canvas) => {
-        if (!err && qrRef.current) {
-          canvas.style.borderRadius = '6px'
-          qrRef.current.innerHTML = ''
-          qrRef.current.appendChild(canvas)
+ // Generate QR once verified
+useEffect(() => {
+  if (state !== 'verified' || !qrUrl || !qrRef.current) return
+
+  qrRef.current.innerHTML = ''
+
+  import('qrcode')
+    .then((QRCode) => {
+      const canvas = document.createElement('canvas')
+
+      QRCode.toCanvas(
+        canvas,
+        qrUrl,
+        { width: 80, color: { dark: '#000', light: '#fff' } },
+        (err) => {
+          if (!err && qrRef.current) {
+            canvas.style.borderRadius = '6px'
+            qrRef.current.innerHTML = ''
+            qrRef.current.appendChild(canvas)
+          }
         }
-      })
-    }).catch(() => {
-      if (qrRef.current) qrRef.current.innerHTML = '<div style="width:80px;height:80px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.6rem;color:#000;text-align:center;padding:4px;">QR</div>'
+      )
     })
-  }, [state, qrUrl])
+    .catch(() => {
+      if (qrRef.current)
+        qrRef.current.innerHTML =
+          '<div style="width:80px;height:80px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.6rem;color:#000;text-align:center;padding:4px;">QR</div>'
+    })
+}, [state, qrUrl])
 
   return (
     <div id="verify" style={{
